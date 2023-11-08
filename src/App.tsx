@@ -10,22 +10,22 @@ const App = () => {
 
   const backgroundColor: React.CSSProperties = {
     backgroundColor:color
-  }
+  };
 
   const ColorButtonClickHandler = (color: string) => {
     setColor(color);
-  }
+  };
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const buttons:typeof ColorButton[] = _.map(Colors, (color) => <ColorButton color={color} onClick={ColorButtonClickHandler}/>)
+  const buttons:typeof ColorButton[] = _.map(Colors, (color) => <ColorButton color={color} onClick={ColorButtonClickHandler}/>);
 
   return (
     <div className='app-container'>
       <ButtonBar buttons={buttons}/>
       <canvas style={backgroundColor}></canvas>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
