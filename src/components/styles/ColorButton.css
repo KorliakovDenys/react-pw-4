@@ -1,0 +1,14 @@
+.color-button{
+    --button-height: 40px;
+    width: 100px;
+    height: var(--button-height);
+    line-height: var(--button-height);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
