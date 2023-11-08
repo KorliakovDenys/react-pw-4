@@ -1,7 +1,7 @@
-import ColorButton from "../components/ColorButton"
+import React from "react";
 
 type ButtonBarProps = {
-	buttons:typeof ColorButton[]
+	buttons: React.ReactElement[]
 }
 
 export default ButtonBarProps;

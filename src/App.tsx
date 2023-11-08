@@ -16,9 +16,7 @@ const App = () => {
     setColor(color);
   };
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const buttons:typeof ColorButton[] = _.map(Colors, (color) => <ColorButton color={color} onClick={ColorButtonClickHandler}/>);
+  const buttons: React.ReactElement[] = _.map(Colors, (color) => <ColorButton color={color} onClick={ColorButtonClickHandler}/>);
 
   return (
     <div className='app-container'>
